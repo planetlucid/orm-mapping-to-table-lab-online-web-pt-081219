@@ -27,7 +27,7 @@ class Student
   end
   
   def save
-    database_connection.execute("INSERT INTO Student (name, id, grade) VALUES (?, ?, ?)",name, id, grade)
+    database_connection.execute("INSERT INTO students (name, id, grade) VALUES (?, ?, ?)",name, id, grade)
   end
   
 end
