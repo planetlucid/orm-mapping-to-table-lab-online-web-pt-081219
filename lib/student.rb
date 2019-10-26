@@ -27,7 +27,7 @@ class Student
   end
   
   def self.save
-    database_connection.execute("INSERT INTO cats (name, breed, age) VALUES (?, ?, ?)",name, breed, age)
+    database_connection.execute("INSERT INTO Student (name, id, grade) VALUES (?, ?, ?)",name, id, grade)
   end
   
 end
