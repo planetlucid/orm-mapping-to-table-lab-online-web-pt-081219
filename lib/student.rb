@@ -26,7 +26,7 @@ class Student
     DB[:conn].execute(sql) 
   end
   
-  def self.save
+  def save
     database_connection.execute("INSERT INTO Student (name, id, grade) VALUES (?, ?, ?)",name, id, grade)
   end
   
