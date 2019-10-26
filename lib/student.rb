@@ -26,4 +26,8 @@ class Student
     DB[:conn].execute(sql) 
   end
   
+  def self.save
+    database_connection.execute("INSERT INTO cats (name, breed, age) VALUES (?, ?, ?)",name, breed, age)
+  end
+  
 end
